@@ -7,6 +7,10 @@ vim.opt.termguicolors = true
 -- Use system clipboard as default
 vim.opt.clipboard = "unnamedplus"
 
+-- Hide command line
+vim.opt.cmdheight = 0
+
+vim.opt.cmdheight = 0
 vim.opt.scrolloff = 8
 vim.opt.sidescrolloff = 8
 
