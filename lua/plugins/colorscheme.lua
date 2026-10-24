@@ -1,13 +1,7 @@
 return {
-  "kdheepak/monochrome.nvim",
-  config = function()
-    vim.cmd "colorscheme monochrome"
-
-    vim.cmd [[
-	      highlight Normal guibg=none ctermbg=none
-	      highlight NormalNC guibg=none
-	      highlight NonText guibg=none
-	      highlight LineNr guibg=none
-	    ]]
-  end,
+	"shaunsingh/nord.nvim",
+	config = function()
+		vim.g.nord_disable_background = true
+		vim.cmd "colorscheme nord"
+	end,
 }
