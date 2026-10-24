@@ -2,7 +2,9 @@ return {
 	'stevearc/oil.nvim',
 	---@module 'oil'
 	---@type oil.SetupOpts
-	dependencies = { { "nvim-mini/mini.icons", opts = {} } },
+	dependencies = {
+		{ "nvim-mini/mini.icons", opts = {} },
+	},
 	lazy = false,
 
 	opts = {
@@ -17,7 +19,11 @@ return {
 
 		view_options = {
 			show_hidden = true
-		}
+		},
+
+		win_options = {
+			signcolumn = "auto:2",
+		},
 	},
 
 	config = function(_, opts)
